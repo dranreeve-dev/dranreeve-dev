@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <title>About — Dranreeve P. Deguinion</title>
+  <style>
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#1a2742; --gold:#c8922a; --cream:#f7f4ef; --white:#ffffff; --text:#2e3345; --muted:#6b7280; --border:#e2ddd6; }
+    html { scroll-behavior: smooth; }
+    body { font-family: "Inter", sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; height: 60px; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    nav .logo { font-family: "Playfair Display", serif; font-size: 1.1rem; color: var(--gold); letter-spacing: .04em; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 28px; }
+    nav ul a { color: rgba(255,255,255,.82); text-decoration: none; font-size: .85rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
+    nav ul a:hover, nav ul a.active { color: var(--gold); }
+    .page-header { background: var(--navy); color: var(--white); padding: 56px 8vw 48px; }
+    .page-header .section-label { font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 8px; }
+    .page-header h1 { font-family: "Playfair Display", serif; font-size: clamp(1.8rem,3.5vw,2.6rem); color: var(--white); }
+    section { padding: 64px 8vw; }
+    footer { background: #111827; color: rgba(255,255,255,.4); text-align: center; padding: 20px; font-size: .78rem; }
+    footer span { color: var(--gold); }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    @media(max-width:680px){ .about-grid { grid-template-columns: 1fr; } }
+    .about-body { font-size: .98rem; color: var(--muted); }
+    .about-body p { margin-bottom: 16px; }
+    .about-facts { display: flex; flex-direction: column; gap: 16px; }
+    .fact { display: flex; flex-direction: column; gap: 2px; padding: 16px 20px; background: #fff; border: 1px solid var(--border); border-radius: 6px; }
+    .fact strong { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+    .fact span { font-size: .92rem; color: var(--text); }
+  </style>
+</head>
+<body>
+<nav><a class="logo" href="index.html">Dranreeve Deguinion</a><ul><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-header">
+  <p class="section-label">Who I Am</p>
+  <h1>About Me</h1>
+</div>
+<section>
+  <div class="about-grid">
+    <div class="about-body">
+      <p>Hi! I am Dranreeve — or "RebReb" to those who know me — an 18-year-old first-year BSIT student at Davao del Norte State College and a consistent honor student.</p>
+      <p>I have a genuine passion for game development, programming, and creative problem-solving. I believe great software comes from combining technical skill with strong interpersonal qualities: adaptability, diligence, and the ability to truly listen.</p>
+      <p>During my Senior High School years I completed an OJT at the City Health Office (CHO), where I organized digital files and supported daily office operations — an experience that sharpened my attention to detail and professional discipline.</p>
+      <p>Outside of code I enjoy cooking, reading, making handmade gifts, and listening to music.</p>
+    </div>
+    <div class="about-facts">
+      <div class="fact"><strong>School</strong><span>Davao del Norte State College — BSIT, 1st Year (2025–2026)</span></div>
+      <div class="fact"><strong>Location</strong><span>Sto. Nino, Carmen, Davao del Norte, Philippines</span></div>
+      <div class="fact"><strong>Passion</strong><span>Software &amp; Game Development</span></div>
+      <div class="fact"><strong>Achievement</strong><span>Consistent Honor Student</span></div>
+      <div class="fact"><strong>Birthday</strong><span>March 4, 2007</span></div>
+      <div class="fact"><strong>Nationality</strong><span>Filipino</span></div>
+    </div>
+  </div>
+</section>
+<footer><p>&copy; 2026 <span>Dranreeve P. Deguinion</span>. Built with passion from Davao del Norte.</p></footer>
+</body>
+</html>

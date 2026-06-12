@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <title>Projects — Dranreeve P. Deguinion</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } :root { --navy:#1a2742; --gold:#c8922a; --cream:#f7f4ef; --white:#ffffff; --text:#2e3345; --muted:#6b7280; --border:#e2ddd6; } html{scroll-behavior:smooth;} body{font-family:"Inter",sans-serif;background:var(--cream);color:var(--text);line-height:1.7;} nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);} nav .logo{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--gold);letter-spacing:.04em;text-decoration:none;} nav ul{list-style:none;display:flex;gap:28px;} nav ul a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;} nav ul a:hover,nav ul a.active{color:var(--gold);} .page-header{background:var(--navy);color:var(--white);padding:56px 8vw 48px;} .page-header .section-label{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;} .page-header h1{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--white);} section{padding:64px 8vw;} footer{background:#111827;color:rgba(255,255,255,.4);text-align:center;padding:20px;font-size:.78rem;} footer span{color:var(--gold);}
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
+    .card { background:var(--white); border:1px solid var(--border); border-radius:8px; padding:28px; transition:transform .2s,box-shadow .2s; }
+    .card:hover { transform:translateY(-4px); box-shadow:0 12px 32px rgba(0,0,0,.08); }
+    .card-tag { display:inline-block; margin-bottom:14px; padding:3px 10px; border-radius:20px; font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; background:#fef3e2; color:var(--gold); }
+    .card h3 { font-family:"Playfair Display",serif; font-size:1.1rem; color:var(--navy); margin-bottom:10px; }
+    .card p { font-size:.88rem; color:var(--muted); line-height:1.6; }
+  </style>
+</head>
+<body>
+<nav><a class="logo" href="index.html">Dranreeve Deguinion</a><ul><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html" class="active">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-header">
+  <p class="section-label">Experience &amp; Work</p>
+  <h1>Projects &amp; Experience</h1>
+</div>
+<section>
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-tag">OJT Experience</span>
+      <h3>City Health Office — File Organization</h3>
+      <p>Organized and digitized office files, assisted with daily administrative tasks, and supported staff operations. Gained hands-on exposure to a professional work environment and developed discipline and attention to detail.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Game Dev</span>
+      <h3>Unreal Engine Exploration</h3>
+      <p>Currently learning game development with Unreal Engine, focusing on level design, blueprints, and C++ integration to build interactive game environments.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Programming</span>
+      <h3>C++, Java &amp; C# Projects</h3>
+      <p>Completed coursework and personal projects using C++, Java, and C# — exploring algorithms, object-oriented design, and small-scale software builds.</p>
+    </div>
+  </div>
+</section>
+<footer><p>&copy; 2026 <span>Dranreeve P. Deguinion</span>. Built with passion from Davao del Norte.</p></footer>
+</body>
+</html>

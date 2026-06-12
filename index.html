@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <title>Dranreeve P. Deguinion | Portfolio</title>
+  <style>
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:  #1a2742;
+      --gold:  #c8922a;
+      --cream: #f7f4ef;
+      --white: #ffffff;
+      --text:  #2e3345;
+      --muted: #6b7280;
+      --border:#e2ddd6;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: "Inter", sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 60px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
+    nav .logo { font-family: "Playfair Display", serif; font-size: 1.1rem; color: var(--gold); letter-spacing: .04em; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 28px; }
+    nav ul a {
+      color: rgba(255,255,255,.82); text-decoration: none;
+      font-size: .85rem; font-weight: 500; letter-spacing: .06em;
+      text-transform: uppercase; transition: color .2s;
+    }
+    nav ul a:hover, nav ul a.active { color: var(--gold); }
+
+    .page-header {
+      background: var(--navy); color: var(--white);
+      padding: 56px 8vw 48px;
+    }
+    .page-header .section-label {
+      font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); font-weight: 600; margin-bottom: 8px;
+    }
+    .page-header h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--white);
+    }
+
+    section { padding: 64px 8vw; }
+    .section-label { font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 8px; }
+    h2 { font-family: "Playfair Display", serif; font-size: clamp(1.6rem,3vw,2.2rem); color: var(--navy); margin-bottom: 40px; }
+    h2 .underline { border-bottom: 3px solid var(--gold); padding-bottom: 4px; }
+    .btn { display: inline-block; padding: 12px 28px; border-radius: 4px; font-size: .88rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; transition: all .2s; border: none; cursor: pointer; }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: #b07a20; }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.4); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    footer { background: #111827; color: rgba(255,255,255,.4); text-align: center; padding: 20px; font-size: .78rem; letter-spacing: .04em; }
+    footer span { color: var(--gold); }
+
+    .hero {
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+      gap: 48px; padding: 80px 8vw; min-height: 92vh;
+    }
+    .hero-photo {
+      flex-shrink: 0; width: 220px; height: 220px; border-radius: 50%;
+      object-fit: cover; object-position: center top;
+      border: 5px solid var(--gold); box-shadow: 0 8px 40px rgba(0,0,0,.45);
+    }
+    .hero-text { max-width: 520px; color: var(--white); }
+    .hero-eyebrow { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 12px; }
+    .hero-text h1 { font-family: "Playfair Display", serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.2; margin-bottom: 18px; }
+    .hero-text h1 span { color: var(--gold); }
+    .hero-text p { font-size: 1rem; color: rgba(255,255,255,.78); margin-bottom: 32px; }
+    .hero-cta { display: inline-flex; gap: 14px; flex-wrap: wrap; }
+    .nav-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 16px; margin-top: 0; }
+    .nav-card {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--white); border: 1px solid var(--border); border-radius: 8px;
+      padding: 20px 24px; text-decoration: none; color: var(--navy); font-weight: 600;
+      font-size: .92rem; transition: all .2s;
+    }
+    .nav-card:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.07); }
+    .nav-card span { font-size: .8rem; color: var(--gold); }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Dranreeve Deguinion</a>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <img class="hero-photo" src="Dranreeve.jpg"
+         alt="Dranreeve P. Deguinion"/>
+  <div class="hero-text">
+    <p class="hero-eyebrow">Portfolio</p>
+    <h1>Dranreeve P.<br><span>Deguinion</span></h1>
+    <p>A passionate BSIT student and aspiring software &amp; game developer from Davao del Norte, driven by curiosity, creativity, and a love for building things that matter.</p>
+    <div class="hero-cta">
+      <a href="projects.html" class="btn btn-gold">View Projects</a>
+      <a href="contact.html" class="btn btn-outline">Contact Me</a>
+    </div>
+  </div>
+</section>
+<section style="background:var(--cream);">
+  <p class="section-label">Explore</p>
+  <h2><span class="underline">Navigate My Portfolio</span></h2>
+  <div class="nav-links">
+    <a class="nav-card" href="about.html">About Me <span>&rarr;</span></a>
+    <a class="nav-card" href="skills.html">Skills <span>&rarr;</span></a>
+    <a class="nav-card" href="education.html">Education <span>&rarr;</span></a>
+    <a class="nav-card" href="projects.html">Projects <span>&rarr;</span></a>
+    <a class="nav-card" href="contact.html">Contact <span>&rarr;</span></a>
+  </div>
+</section>
+<footer><p>&copy; 2026 <span>Dranreeve P. Deguinion</span>. Built with passion from Davao del Norte.</p></footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <title>Skills — Dranreeve P. Deguinion</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } :root { --navy:#1a2742; --gold:#c8922a; --cream:#f7f4ef; --white:#ffffff; --text:#2e3345; --muted:#6b7280; --border:#e2ddd6; } html{scroll-behavior:smooth;} body{font-family:"Inter",sans-serif;background:var(--cream);color:var(--text);line-height:1.7;} nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);} nav .logo{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--gold);letter-spacing:.04em;text-decoration:none;} nav ul{list-style:none;display:flex;gap:28px;} nav ul a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;} nav ul a:hover,nav ul a.active{color:var(--gold);} .page-header{background:var(--navy);color:var(--white);padding:56px 8vw 48px;} .page-header .section-label{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;} .page-header h1{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--white);} section{padding:64px 8vw;} footer{background:#111827;color:rgba(255,255,255,.4);text-align:center;padding:20px;font-size:.78rem;} footer span{color:var(--gold);}
+    #skills-body { background: var(--navy); }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    @media(max-width:580px){ .skills-grid { grid-template-columns: 1fr; } }
+    .skill-group h3 { font-size:.78rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
+    .skill-item { margin-bottom:18px; }
+    .skill-name { display:flex; justify-content:space-between; margin-bottom:6px; font-size:.9rem; color:#fff; }
+    .skill-bar { height:5px; background:rgba(255,255,255,.12); border-radius:3px; overflow:hidden; }
+    .skill-fill { height:100%; background:var(--gold); border-radius:3px; }
+    .tag-list { display:flex; flex-wrap:wrap; gap:10px; }
+    .tag { padding:6px 14px; border-radius:20px; font-size:.82rem; font-weight:500; background:rgba(200,146,42,.15); color:var(--gold); border:1px solid rgba(200,146,42,.3); }
+    .page-header-dark { background:var(--navy); color:var(--white); padding:56px 8vw 48px; }
+    .page-header-dark .section-label { font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:8px; }
+    .page-header-dark h1 { font-family:"Playfair Display",serif; font-size:clamp(1.8rem,3.5vw,2.6rem); color:var(--white); }
+  </style>
+</head>
+<body>
+<nav><a class="logo" href="index.html">Dranreeve Deguinion</a><ul><li><a href="about.html">About</a></li><li><a href="skills.html" class="active">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="page-header-dark">
+  <p class="section-label">What I Know</p>
+  <h1>Skills</h1>
+</div>
+<section id="skills-body" style="background:var(--navy);color:var(--white);padding:64px 8vw;">
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>Hard Skills — Programming &amp; Tools</h3>
+      <div class="skill-item">
+        <div class="skill-name"><span>C++</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>Java</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>C#</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name"><span>Unreal Engine</span></div>
+        <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h3>Soft Skills</h3>
+      <div class="tag-list">
+        <span class="tag">Adaptability</span>
+        <span class="tag">Hardworking</span>
+        <span class="tag">Diligence</span>
+        <span class="tag">Teamwork</span>
+        <span class="tag">Fast Learner</span>
+        <span class="tag">Good Listener</span>
+        <span class="tag">Emotionally Intelligent</span>
+        <span class="tag">Attention to Detail</span>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><p>&copy; 2026 <span>Dranreeve P. Deguinion</span>. Built with passion from Davao del Norte.</p></footer>
+</body>
+</html>

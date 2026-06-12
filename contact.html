@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <title>Contact — Dranreeve P. Deguinion</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; } :root { --navy:#1a2742; --gold:#c8922a; --cream:#f7f4ef; --white:#ffffff; --text:#2e3345; --muted:#6b7280; --border:#e2ddd6; } html{scroll-behavior:smooth;} body{font-family:"Inter",sans-serif;background:var(--cream);color:var(--text);line-height:1.7;} nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);} nav .logo{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--gold);letter-spacing:.04em;text-decoration:none;} nav ul{list-style:none;display:flex;gap:28px;} nav ul a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;transition:color .2s;} nav ul a:hover,nav ul a.active{color:var(--gold);} .page-header{background:var(--navy);color:var(--white);padding:56px 8vw 48px;} .page-header .section-label{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;} .page-header h1{font-family:"Playfair Display",serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--white);} section{padding:64px 8vw;} footer{background:#111827;color:rgba(255,255,255,.4);text-align:center;padding:20px;font-size:.78rem;} footer span{color:var(--gold);}
+    #contact-body { background: var(--navy); color: var(--white); }
+    .contact-links { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin-top:36px; }
+    .contact-link {
+      display:flex; align-items:center; gap:10px;
+      padding:14px 24px; border-radius:6px;
+      background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.15);
+      color:var(--white); text-decoration:none; font-size:.88rem; font-weight:500;
+      transition:all .2s;
+    }
+    .contact-link:hover { background:var(--gold); color:var(--navy); border-color:var(--gold); }
+    .contact-link svg { width:18px; height:18px; flex-shrink:0; }
+    .contact-intro { color:rgba(255,255,255,.72); max-width:480px; margin:0 auto; text-align:center; }
+    .page-header-dark { background:var(--navy); color:var(--white); padding:56px 8vw 48px; }
+    .page-header-dark .section-label { font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:8px; }
+    .page-header-dark h1 { font-family:"Playfair Display",serif; font-size:clamp(1.8rem,3.5vw,2.6rem); color:var(--white); }
+  </style>
+</head>
+<body>
+<nav><a class="logo" href="index.html">Dranreeve Deguinion</a><ul><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="education.html">Education</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav>
+<div class="page-header-dark">
+  <p class="section-label">Get in Touch</p>
+  <h1>Contact Me</h1>
+</div>
+<section id="contact-body" style="background:var(--navy);padding:64px 8vw;text-align:center;">
+  <p class="contact-intro">I am open to opportunities, collaborations, or just a good conversation about tech and game development. Feel free to reach out!</p>
+  <div class="contact-links">
+    <a class="contact-link" href="mailto:deguiniondranreeve@gmail.com">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      deguiniondranreeve@gmail.com
+    </a>
+    <a class="contact-link" href="tel:09097260242">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3-8.65A2 2 0 0 1 3.17 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+      0909-726-0242
+    </a>
+    <a class="contact-link" href="https://sites.google.com/dnsc.edu.ph/projectsample/about-me" target="_blank">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+      Google Site Portfolio
+    </a>
+  </div>
+</section>
+<footer><p>&copy; 2026 <span>Dranreeve P. Deguinion</span>. Built with passion from Davao del Norte.</p></footer>
+</body>
+</html>
